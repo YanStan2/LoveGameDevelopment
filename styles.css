@@ -7,6 +7,8 @@ body {
 
   box-sizing: border-box; /* apply box-sizing to the entire document */
 
+  background-color: rgb(252,249,246);
+
   *, *::before, *::after {
     box-sizing: inherit; /* inherit box-sizing from body */
 
@@ -17,7 +19,7 @@ body {
 .header {
   width: 100%;
   height: 64px;
-  background-color: rgb(255, 227, 236);
+  background-color: rgb(255,198,209);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,13 +85,12 @@ body {
 }
 
 .navigation {
-  background-color: rgb(255,249,251);
+  background-color: rgb(255,234,233);
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding:12 80;
 }
 
 .menu-container {
@@ -97,16 +98,12 @@ body {
   position: center;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0;
 
 }
 
 .world-dropdown {
   position: absolute;
   left: 80;
-  padding: none;
-  margin: none;
 }
 
 .dropbtn {
@@ -116,8 +113,6 @@ body {
   color: rgb(20, 19, 19);
   border: none;
   cursor: pointer;
-  padding: none;
-  margin: none;
 
 }
 
@@ -167,8 +162,15 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: bold;
-  padding: none;
-  margin: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 110px);
 }
 
 .btn-ly {
@@ -177,4 +179,5 @@ body {
   border-radius: 32px;
   border: none;
   padding: 8 16;
+  margin-bottom: 20px;
 }
